@@ -1,0 +1,36 @@
+.header {
+    padding-top: 30px;
+    min-height: 115px;
+    margin-bottom: 100px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-left: auto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+    li {
+        list-style: none;
+    }
+}
+.menu {
+    margin: 0 197px 0 130px;
+    &__item {
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: rgb(27, 27, 27);
+        &:nth-child(5) {
+            margin-bottom: 0;
+        }
+    }
+}
+.user-nav {
+    display: flex;
+    gap: 20px;
+}
