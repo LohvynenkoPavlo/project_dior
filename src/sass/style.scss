@@ -39,9 +39,33 @@ ul {
     padding: 0 10px;
     &__arrow {
         position: relative;
+        height: 20px;
+    }
+}
+
+.btn {
+    display: block;
+    padding: 21px 55px;
+    color: rgb(116, 73, 187);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    border: 1px solid rgb(116, 73, 187);
+    background: rgba(217, 217, 217, 0);
+    margin-left: auto;
+    transition: all .5s;
+    &:hover {
+        color: #fff;
+        background-color:  rgb(116, 73, 187);
     }
 }
 
 
 @import 'blocks/header';
 @import 'blocks/top-slider';
+@import 'blocks/about';
+@import 'blocks/accordeon';
+@import 'blocks/products';
+@import 'blocks/play';
+@import 'blocks/footer';
+

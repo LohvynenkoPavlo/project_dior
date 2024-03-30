@@ -1,7 +1,12 @@
 .top {
     margin-bottom: 150px;
     &-slide {
+        &__btn {
+            position: absolute;
+            right: 0px;
+        }
         &__inner {
+            position: relative;
             min-height: 700px;
             padding-right: 3px;
             display: flex;
@@ -31,22 +36,6 @@
             line-height: 17px;
             margin-bottom: 20px;
         }
-        &__btn {
-            display: block;
-            padding: 21px 55px;
-            color: rgb(116, 73, 187);
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 17px;
-            border: 1px solid rgb(116, 73, 187);
-            background: rgba(217, 217, 217, 0);
-            margin-left: auto;
-            transition: all .5s;
-            &:hover {
-                color: #fff;
-                background-color:  rgb(116, 73, 187);
-            }
-        }
     }
     .swiper {
         padding-bottom: 50px;
@@ -54,6 +43,7 @@
 }
 .swiper-button-prev,.swiper-button-next{
     display: block;
+    position: absolute;
     top: 50px;
     &::after {
         content: none;

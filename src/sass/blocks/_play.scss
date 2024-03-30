@@ -1,0 +1,20 @@
+.video {
+    margin-bottom: 150px;
+    &__wrapper {
+        padding-left: 200px;
+    }
+    &__box {
+        margin-left: auto;
+        min-width: 997px;
+        min-height: 600px;
+        background: url(../img/video_bg.jpg)center center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+}
