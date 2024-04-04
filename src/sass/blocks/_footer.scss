@@ -109,14 +109,12 @@
             display: flex;
             margin: 0 auto;
             gap: 0 20px;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
         &-item {
             a {
-                color: rgb(0, 0, 0);
-                font-family: Inter;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 400;   
                 text-align: center;
             }

@@ -2,17 +2,153 @@
     .container {
         max-width: 960px;
     }
+    .video {
+        &__wrapper {
+            padding-left: 0;
+        }
+        &__box {
+            min-width: 100%;
+        }
+    }
+    .header {
+        margin-bottom: 35px;
+        &__title {
+            display: none;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+    }
+    .menu {
+        margin: 0;
+    }
+    .top {
+        margin-bottom: 50px;
+        &-slide__btn {
+            bottom: 20px;
+            right: 50%;
+            transform: translateX(50%);
+            
+        }
+    }
+    .about {
+        &__text {
+            margin-bottom: 60px;
+            gap: 30px;
+        }
+    }
+    .footer {
+        &__social {
+            &-list {
+                margin-right: 10px;
+            }
+        }
+        &__nav {
+            padding: 0;
+        }
+    }
 }
 
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
     }
+    .top {
+        &-slide {
+            &__inner {
+                gap: 30px;
+            }
+        }
+        &__swiper {
+            &-img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    .accordeon {
+        margin-bottom: 123px;
+        &__item {
+            margin-left: 0;
+        }
+        &__triger {
+            &-text {
+                margin-right: 20px;
+            }
+            &-title {
+                font-size: 22px;
+            }
+        }
+    }
+    .footer {
+        &__img {
+            display: none;
+        }
+        &__nav {
+            &-list {
+                flex-wrap: wrap;
+            }
+            &-item {
+                width: 180px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
+        &__arrow {
+            display: none;
+        }
+    }
+    .top {
+        &__wrapper {
+            max-height: 400px;
+        }
+        &__swiper {
+            &-img {
+                display: none;
+            }
+        }
+    }
+    .btn {
+        font-size: 11px;
+        padding: 20px 35px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .about {
+        &__wrapper {
+            padding-left: 0;
+        }
+        &__text {
+            &-left {
+               font-size: 12px;                              
+            }
+            &-right {
+                font-size: 12px;
+            }
+        }
+    }
+    .accordeon {
+        &__item {
+            &:before {
+                right: 50px;
+            }
+        }
+    }
+    .footer {
+        &__top {
+            margin-bottom: 30px;
+        }
+        &__item {
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-right: 30px;
+        }
     }
 }
 
@@ -20,5 +156,80 @@
     .container {
         max-width: 100%;
         padding: 0 10px;
+    }
+    .top {
+        &-slide {
+            &__inner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+    .about {
+        &__swiper {
+            display: none;
+            &-slide_subcontent {
+                display: none;
+            }
+        }
+        &__text {
+            flex-direction: column;
+            &-right {
+                padding-top: 20px;
+                font-size: 14px;
+            }
+            &-left {
+                font-size: 14px;
+            }
+        }
+    }
+    .btn {
+        width: 95%;
+    }
+    .accordeon {
+        &__item {
+            &:last-child {
+                &::after {
+                    left: 230px;
+                }
+            }
+        }
+        &__triger {
+            &-title {
+                font-size: 18px;
+            }
+        }
+    }
+    .products {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__title {
+            margin-right: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__item {
+            margin-right: 0;
+        }
+    }
+    .footer {
+        &__title {
+            display: none;
+        }
+        &__items {
+            margin-right: 0;
+            text-align: center;
+        }
+        &__item {
+            &-list {
+                li {
+                    text-align: center;
+                }
+            }
+        }
     }
 }
